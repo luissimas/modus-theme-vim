@@ -211,15 +211,15 @@ function M.core_highlights(colors)
 
 	-- plugins
 	-- lsp
-	syntax["lspdiagnosticssignerror"] = { fg = colors.red_active, bg = "none", style = "bold" }
-	syntax["lspdiagnosticssignhint"] = { fg = colors.green_active, bg = "none", style = "bold" }
-	syntax["lspdiagnosticssigninformation"] = { fg = colors.green_active, bg = "none", style = "bold" }
-	syntax["lspdiagnosticssignwarning"] = { fg = colors.yellow_active, bg = "none", style = "bold" }
+	syntax["lspdiagnosticssignerror"] = { fg = colors.red_active, bg = colors.bg_main, style = "bold" }
+	syntax["lspdiagnosticssignhint"] = { fg = colors.green_active, bg = colors.bg_main, style = "bold" }
+	syntax["lspdiagnosticssigninformation"] = { fg = colors.green_active, bg = colors.bg_main, style = "bold" }
+	syntax["lspdiagnosticssignwarning"] = { fg = colors.yellow_active, bg = colors.bg_main, style = "bold" }
 	syntax["lspdiagnosticsunderlineerror"] = { fg = colors.red_active, style = "underline" }
 	syntax["lspdiagnosticsunderlineinformation"] = { fg = colors.green_active, style = "underline" }
 	syntax["lspdiagnosticsunderlinewarning"] = { fg = colors.yellow_active, style = "underline" }
 	syntax["lspdiagnosticsvirtualtexterror"] = { fg = colors.red_active, style = "bold" }
-	syntax["lspdiagnosticsvirtualtexthint"] = { fg = colors.green_active, bg = "none", style = "bold" }
+	syntax["lspdiagnosticsvirtualtexthint"] = { fg = colors.green_active, style = "bold" }
 	syntax["lspdiagnosticsvirtualtextwarning"] = { fg = colors.yellow_active, style = "bold" }
 	syntax["lspdiagnosticsfloatingerror"] = { fg = colors.red_active, bg = colors.bg_active }
 	syntax["lspdiagnosticsfloatingwarning"] = { fg = colors.yellow_active, bg = colors.bg_active }
@@ -236,7 +236,7 @@ function M.core_highlights(colors)
 	syntax["tsconstant"] = syntax["Constant"]
 	syntax["tsconstbuiltin"] = syntax["Constant"]
 	syntax["tsconstmacro"] = syntax["Macro"]
-	syntax["tserror"] = { fg = colors.fg_main, bg = colors.red_intense_bg, style = "bold" }
+	syntax["tserror"] = { fg = colors.fg_main }
 	syntax["tsexception"] = syntax["Conditional"]
 	syntax["tsfield"] = syntax["Identifier"]
 	syntax["tsfloat"] = syntax["Float"]
