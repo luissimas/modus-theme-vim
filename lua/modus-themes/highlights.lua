@@ -100,8 +100,8 @@ function M.core_highlights(colors)
 	syntax["DiffChange"] = { fg = colors.fg_diff_changed, bg = colors.bg_diff_changed }
 	syntax["DiffDelete"] = { fg = colors.fg_diff_removed, bg = colors.bg_diff_removed }
 	syntax["DiffText"] = { fg = colors.fg_diff_changed, bg = colors.bg_diff_changed }
-	syntax["SpellBad"] = { fg = colors.fg_lang_error }
-	syntax["SpellCap"] = { fg = colors.fg_lang_error }
+	syntax["SpellBad"] = { style = "undercurl" }
+	syntax["SpellCap"] = { style = "undercurl" }
 	-- syntax['SpellLocal'] = {}
 	-- syntax['SpellRare'] = {}
 	syntax["WarningMsg"] = { fg = colors.yellow_alt }
