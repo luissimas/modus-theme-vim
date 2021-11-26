@@ -219,3 +219,4 @@ if vim.g.modus_moody_enable == 1 then
 	require('modus-themes.galaxyline').set_statusline(colors)
 end
 
+return colors
